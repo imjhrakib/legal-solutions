@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -19,8 +21,21 @@
       background-position: center;
     }
 
-    .text-custom-gray {
+    .bg-mix-card {
+      background-image: linear-gradient(to top, rgba(243, 243, 243, 0) 0%, rgba(243, 243, 243, 1) 100%);
+      background-size: cover;
+      background-position: center;
+    }
+    .dark-02 {
+      color: #414040;
+    }
+
+    .dark-03 {
       color: #707070;
+    }
+
+    .btn-color {
+      background-color: #B68C5A;
     }
 
     .font-ebgaramond {
@@ -36,10 +51,11 @@
 </head>
 
 <body class="">
+
   <header class="flex justify-between items-center m-12">
     <div><img class="" src="images/logo2.png" alt=""></div>
     <nav>
-      <ul class="flex gap-8 items-center text-custom-gray">
+      <ul class="flex gap-8 items-center dark-03">
         <li><a href="#home">Home</a></li>
         <li>
           <a class="flex gap-1.5" href="#services">Services
@@ -59,9 +75,10 @@
         </li>
       </ul>
     </nav>
-    <button class="bg-[#B68C5A] px-7 py-5 rounded-[8px]">Free Consultation</button>
+    <button class="btn-color px-7 py-5 rounded-[8px]">Free Consultation</button>
   </header>
   <main>
+
     <section class="h-[500px] m-[50px] rounded-[8px] flex flex-col items-center justify-center bg-mix">
 
       <div class="text-[#FFFFFF] text-[60px] text-center w-[668px] font-ebgaramond">
@@ -74,7 +91,52 @@
       <div class="mb-[40px] flex gap-2.5 font-poppins">
         <input type="search" name="" id="" placeholder="Search your services"
           class="bg-[#FFFFFF] text-[#A0A0A0] rounded-[8px] w-[450px] h-[50px] placeholder:pt-[19px] pl-[20px]">
-        <button class="bg-[#B68C5A] h-[50px] px-7 rounded-[8px]">Search</button>
+        <button class="btn-color font-poppins h-[50px] px-7 rounded-[8px]">Search</button>
+      </div>
+    </section>
+    <!-- The legal practice area title -->
+    <section class="flex flex-col items-center mt-[100px] mb-[50px]">
+      <h2 class="font-ebgaramond text-[40px] dark-02 font-extrabold">The Legal Practice Area</h2>
+      <p class="font-poppins dark-03 font-normal w-[650px] text-center">There are many variations of passages of Lorem Ipsum available, but the majority
+        have suffered alteration in some form, by injected humour.</p>
+    </section>
+    <!-- The legal practice area card -->
+    <section class="grid grid-cols-3 m-[50px]">
+      <div class="grid grid-cols-1 gap-4 text-center border-r-gray-200 border-r-1 border-b-gray-200 border-b-1">
+        <img class="mx-auto mt-[40px]" src="images/business.png" alt="">
+        <h3 class="dark-02 font-extrabold font-ebgaramond text-[32px]">Business Law</h3>
+        <h6 class="w-[200px] text-center mx-auto font-poppins dark-03 text-[16px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non modi labore possimus enim maxime est voluptatem voluptas, magni suscipit nemo, debitis id tenetur sit ex?</h6>
+        <img class="mx-auto mb-[40px]" src="images/Frame.png" alt="">
+      </div>
+      <div class="grid grid-cols-1 gap-4 text-center bg-mix-card border-r-gray-200 border-r-1 border-b-gray-200 border-b-1">
+        <img class="mx-auto mt-[40px]" src="images/criminal.png" alt="">
+        <h3 class="dark-02 font-extrabold font-ebgaramond text-[32px]">Criminal Law</h3>
+        <h6 class="w-[200px] text-center mx-auto font-poppins dark-03 text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ducimus porro reprehenderit dolore deserunt nemo fugiat vero autem aut voluptate!</h6>
+        <img class="mx-auto mb-[40px]" src="images/Frame.png" alt="">
+      </div>
+      <div class="grid grid-cols-1 gap-4 text-center border-b-gray-200 border-b-1">
+        <img class="mx-auto mt-[40px]" src="images/child.png" alt="">
+        <h3 class="dark-02 font-extrabold font-ebgaramond text-[32px]">Child Support</h3>
+        <h6 class="w-[200px] text-center mx-auto font-poppins dark-03 text-[16px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet vitae provident eligendi ullam rem esse veniam, sed asperiores cumque harum veritatis, accusamus consequuntur! Id, voluptatibus!</h6>
+        <img class="mx-auto mb-[40px]" src="images/Frame.png" alt="">
+      </div>
+      <div class="grid grid-cols-1 gap-4 text-center border-r-gray-200 border-r-1">
+        <img class="mx-auto mt-[40px]" src="images/education.png" alt="">
+        <h3 class="dark-02 font-extrabold font-ebgaramond text-[32px]">Education Law</h3>
+        <h6 class="w-[200px] text-center mx-auto font-poppins dark-03 text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod voluptatibus, illo numquam unde et culpa quaerat blanditiis accusamus dolorum similique, harum quo cupiditate atque.</h6>
+        <img class="mx-auto mb-[40px]" src="images/Frame.png" alt="">
+      </div>
+      <div class="grid grid-cols-1 gap-4 text-center border-r-gray-200 border-r-1">
+        <img class="mx-auto mt-[40px]" src="images/divorce.png" alt="">
+        <h3 class="dark-02 font-extrabold font-ebgaramond text-[32px]">Divorce Law</h3>
+        <h6 class="w-[200px] text-center mx-auto font-poppins dark-03 text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum ea illum, accusantium, suscipit nostrum facere vel quam corporis excepturi molestias rerum, saepe reprehenderit tempore?</h6>
+        <img class="mx-auto mb-[40px]" src="images/Frame.png" alt="">
+      </div>
+      <div class="grid grid-cols-1 gap-4 text-center">
+        <img class="mx-auto mt-[40px]" src="images/tax.png" alt="">
+        <h3 class="dark-02 font-extrabold font-ebgaramond text-[32px]">Tax Law</h3>
+        <h6 class="w-[200px] text-center mx-auto font-poppins dark-03 text-[16px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non, quidem atque dolor, quos debitis quod cumque voluptatibus sequi repudiandae, nemo iure ratione nam corrupti?</h6>
+        <img class="mx-auto mb-[40px]" src="images/Frame.png" alt="">
       </div>
     </section>
   </main>
